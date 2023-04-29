@@ -1,0 +1,20 @@
+@media only screen and (min-width: 32.5em) {
+    #content{
+        max-width: 500px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    footer{
+        border-radius: 10px;
+    }
+}

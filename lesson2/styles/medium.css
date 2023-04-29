@@ -1,0 +1,19 @@
+@media only screen and (min-width: 720px) {
+    #content{
+        max-width: 75%;
+    }
+    header {
+        border-radius: 10px;
+    }
+    footer{
+        border-radius: 10px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .card:last-child:nth-last-child(odd) {
+        grid-column-end: span 2;
+    }
+}

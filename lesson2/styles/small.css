@@ -1,0 +1,35 @@
+#content{
+	margin: 0 auto;
+    font-family: 'Roboto', 'Verdana', sans-serif;
+}
+header {
+    text-align: center;
+    border: 2px solid #464646;
+    background-color: #cacaca;
+}
+h1, h2, h3, h4, footer{
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+.card {
+    display: grid;
+    grid-template-rows: 8em;
+    justify-items: center;
+    margin: 20px;
+    padding: 2px 16px;
+    text-align: center;
+    border: 2px solid #464646;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.card img{
+    margin: 20px 0px;
+    border-radius: 10px;
+    max-width: 75%;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    border: 2px solid #464646;
+    background-color: #cacaca;
+    font-size: 10px;
+}
