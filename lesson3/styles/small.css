@@ -32,6 +32,39 @@ nav .active{
     background-color: #F35C5B;
     color: #111111;
 }
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+}
+.topnav .icon {
+  display: none;
+  padding: 12px 15px;
+}
+.topnav img{
+  width:20px;
+}
+@media screen and (max-width: 450px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        margin-top: 50px;
+    }
+    .topnav.responsive .icon {
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    }
+}
 h1, h2, h3, h4 {
     font-family: "Bebas Neue", "Arial", sans-serif;
     color:#F35C5B;
