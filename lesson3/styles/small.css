@@ -1,0 +1,145 @@
+body{
+	margin: 0 auto;
+    font-family: "Roboto", "Verdana", sans-serif;
+    text-align: center;
+}
+header {
+    text-align: center;
+    border-bottom: 2px solid #F35C5B;
+    background-color: #F4F5F6;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+#logo img{
+    margin: 5px 20px 5px 5px;
+    height: 33px;
+}
+nav a{
+	color: #000000;
+	text-decoration: none;
+	padding: 15px;
+}
+nav a:hover{
+	background-color: #C5E3F5;
+	color: #111111;
+}
+nav .active{
+    background-color: #F35C5B;
+    color: #111111;
+}
+h1, h2, h3, h4 {
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    color:#F35C5B;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.25em;
+}
+#hero{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+#hero-image{
+	height: 50vh;
+    max-width: 100vw;
+    object-fit: cover;
+}
+#hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+#hero-text h1{
+    font-size: 3em;
+}
+#hero-text h2{
+    font-size: 1.5em;
+    margin-top: -40px;
+    color:#222222
+}
+#hero-text p{
+    font-size: 1em;
+    color: #F4F5F6;
+    font-size: 1.25em;
+}
+mark{
+    font-weight: bold;
+    color:#F35C5B;
+    background-color: transparent;
+}
+ul {
+    list-style-position: inside;
+}
+#personas{
+    display:block;
+    text-align: center;
+}
+.persona{
+    border: 3px solid #C5E3F5;
+    margin: 50px 10px;
+    padding: 0px 10px;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #F35C5B;
+    background-color: #F4F5F6;
+    font-size: 10px;
+}
+
+
+
+/* design page */
+
+.colors {
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999999;
+  }
+  .colors td{
+    width: 20%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #F35C5B;
+  }
+  .secondary {
+    background-color: #C5E3F5;
+  }
+  .background {
+    background-color: #222222;
+    color: #F4F5F6;
+  }
+  .accent1 {
+    background-color: #F4F5F6;
+  }
+  .accent2{
+    background-color: #111111;
+    color: #F4F5F6;
+  }
+  
+  p.colored {
+    background-color: #222222;
+    color: #F4F5F6;
+  }

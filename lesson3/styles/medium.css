@@ -1,0 +1,21 @@
+@media only screen and (min-width: 720px) {
+    #logo img{
+        height: 50px;
+    }
+    nav a{
+        padding: 23px;
+        font-size: 1.5em;
+    }
+    #hero-text{
+        transform: translate(-50%, -70%);
+    }
+    #hero-text h1{
+        font-size: 4em;
+    }
+    #hero-text h2{
+        font-size: 1.75em;
+    }
+    #hero-text p{
+        font-size: 1.75em;
+    }
+}

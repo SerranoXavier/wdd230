@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1080px) {
+    #hero-image{
+        width: 100%;
+        height: auto;
+    }
+    #logo img{
+        height: 66px;
+    }
+    nav a{
+        padding: 31px;
+    }
+    #hero-text{
+        transform: translate(-50%, -80%);
+    }
+    #hero-text h1{
+        font-size: 5em;
+    }
+    #hero-text h2{
+        font-size: 2em;
+        margin-top: -70px;
+    }
+    #hero-text p{
+        font-size: 2em;
+    }
+}
