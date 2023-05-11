@@ -9,11 +9,13 @@
     #hero-text{
         transform: translate(-50%, -70%);
     }
-    #hero-text h1{
+    #hero-text h2{
         font-size: 4em;
     }
-    #hero-text h2{
+    #hero-text h3{
         font-size: 1.75em;
+        margin-top: -65px;
+        margin-left: -10px;
     }
     #hero-text p{
         font-size: 1.75em;
