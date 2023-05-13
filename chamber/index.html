@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Xavier Serrano">
+        <meta name="description" content="Chamber of commerce of Lyon, France">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <title>Chamber of Commerce - Lyon (France)</title>
+    </head>
+<body>
+    <header>
+        <div id="topNav">
+            <a id="logo" href="index.html">
+                <img src="images/BeLyon_logo_red_black.png" alt="Be Lyon Logo: Head of a roaring lion">
+            </a>
+            <h1>
+                Chamber of Commerce<br>Lyon
+            </h1>
+            <div id="socialNetwork">
+                <a href="https://www.linkedin.com"  target="_blank">
+                    <img src="images/linkedin_black.png" alt="LinkedIn logo">
+                </a>
+                <a href="https://www.facebook.com"  target="_blank">
+                    <img src="images/facebook_black.png" alt="Facebook logo">
+                </a>
+            </div>
+                <button id="menuButton"><span>&#9776</span><span>X</span></button>
+        </div>
+        <nav>
+            <ul id="menuNav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p id="today"></p>
+        </div>
+    </header>
+    <main>
+        <div id="hero">
+            <p>
+                Hero with site name and call to action
+            </p>
+        </div>
+        <div id="event">
+            <p>
+                Event
+            </p>
+        </div>
+        <div id="weather">
+            <p>
+                Weather
+            </p>
+        </div>
+        <div id="news">
+            <p>
+                News Release
+            </p>
+        </div>
+        <div id="spotlights">
+            <div id="spotlight1">
+                <p>
+                    spotlight 1
+                </p>
+            </div>
+            <div id="spotlight2">
+                <p>
+                    spotlight 2
+                </p>
+            </div>
+            <div id="spotlight3">
+                <p>
+                    spotlight 3
+                </p>
+            </div>
+        </div>
+        <div id="join">
+            <p>
+                Join
+            </p>
+        </div>
+    </main>
+    <footer>
+        <img id="logoFooter" src="images/BeLyon_logo_red_black.png" alt="Be Lyon Logo: Head of a roaring lion">
+        <div id="adress">
+            <h2>Chamber of Commerce - Lyon</h2>
+            <p>
+                1 place de la Bourse<br>69002 Lyon 2<br>France
+            </p>
+        </div>
+        <div id="contact">
+            <a href = "mailto: contact@belyon.org">contact@belyon.org</a>
+            <p>+33 4 12 34 56 78</p>
+            <a href="https://www.google.com/maps/place/Palais+de+la+Bourse+de+Lyon/@45.7640335,4.8341373,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eaf89f0eafe1:0xe0289dd08db2ef55!8m2!3d45.7640335!4d4.836326!16s%2Fm%2F063zr7n"  target="_blank"><img src="images/place_black.png" alt="map pointer icon">Location map</a>
+        </div>
+        <div id="credits">
+            <p>&copy; <span id="currentyear"></span> Lyon Chamber of Commerce | Xavier Serrano | WDD 230 Project</p>
+            <p>Last updated: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

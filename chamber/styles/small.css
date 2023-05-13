@@ -1,0 +1,138 @@
+body {
+	margin: 0 auto;
+    font-family: "Roboto", "Verdana", sans-serif;
+    text-align: center;
+    color: #222222;
+}
+h1, h2, h3, h4 {
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    color:#F35C5B;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.25em;
+}
+header {
+    background-color: #F4F5F6;
+    border-bottom: 2px solid #F35C5B;
+}
+header h1 {
+    text-align: left;
+    font-size: 1em;
+}
+header a {
+    text-decoration: none;
+}
+#topNav {
+    display: grid;
+    grid-template-columns: 110px auto 80px 70px;
+}
+#logo {
+    text-align: center;
+    align-self: center;
+}
+#logo img {
+    margin: 5px 20px 5px 5px;
+    height: 33px;
+}
+#socialNetwork {
+    align-self: center;
+}
+#socialNetwork img {
+    padding: 5px;
+    height: 25px;
+    transition: .5s;
+}
+#socialNetwork img:hover {
+    background-color: #C5E3F5;
+    height: 29px;
+}
+header button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+#menuNav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #222222;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li.active a {
+    background-color: #F35C5B;
+    color: #F4F5F6;
+}
+nav ul li a:hover {
+    background-color: #C5E3F5;
+    color: #222222;
+}
+nav ul {
+    display: none;
+    border-top: 2px solid rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+nav ul.open {
+    display:block;
+}
+#menuButton span:nth-child(1) {display: block;}
+#menuButton span:nth-child(2) {display: none;}
+#menuButton.open span:nth-child(1) {display: none;}
+#menuButton.open span:nth-child(2) {display: block;}
+
+main div {
+    border: 1px solid #111111;
+    min-height: 100px;
+    margin: 5px;
+}
+#join {
+    display: none;
+}
+#spotlight3 {
+    display:none;
+}
+
+footer {
+    background-color: #F4F5F6;
+    border-top: 2px solid #F35C5B;
+}
+#logoFooter {
+    height: 66px;
+}
+footer h2 {
+    font-size: 18px;
+}
+footer a {
+    color: #222222;
+}
+footer img {
+    padding: 5px;
+    height: 25px;
+    transition: .5s;
+}
+footer img:hover {
+    height: 29px;
+}
+#contact {
+    display: block;
+    align-self: center;
+}
+#credits {
+    font-size: 12px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    margin: 10px 0;
+    padding-bottom: 1px;
+}
