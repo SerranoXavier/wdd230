@@ -1,0 +1,36 @@
+body {
+	margin: 0 auto;
+    font-family: 'Roboto', 'Verdana', sans-serif;
+    text-align: center;
+}
+h1, h2, h3, h4, footer {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1em;
+    border-bottom: 1px solid #acacac;
+}
+h3 {
+    font-size: 1em;
+}
+header {
+    text-align: center;
+    border: 2px solid #464646;
+    background-color: #cacaca;
+}
+header h1 {
+    line-height: 3em;
+}
+video {
+    width: 100%;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    border: 2px solid #464646;
+    background-color: #cacaca;
+    font-size: 10px;
+}
