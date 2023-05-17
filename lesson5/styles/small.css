@@ -42,6 +42,11 @@ input, button {
 }
 button {
 	margin: 0.5rem;
+	transition: 0.25s;
+}
+button:hover {
+	transform: scale(1.1);
+	font-weight: 600;
 }
 .delete {
 	width: fit-content;
@@ -49,6 +54,10 @@ button {
 .input {
 	display: flex;
 	gap: 1rem;
+}
+#submit {
+	width: 10em;
+	align-self: center;
 }
 .list {
 	padding: 0.5rem;
