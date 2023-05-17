@@ -1,0 +1,63 @@
+// Current Year
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector("#currentyear").textContent = year;
+
+// Last Modified
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+const dateLastModif = new Date(document.lastModified);
+const dayLastModif = dateLastModif.getDate();
+const monthLastModif = months[dateLastModif.getMonth()];
+const yearLastModif = dateLastModif.getFullYear();
+const hourLastModif = dateLastModif.getHours();
+const minuteLastModif = dateLastModif.getMinutes();
+document.querySelector("#lastmodified").textContent = `${dayLastModif} ${monthLastModif} ${yearLastModif} ${hourLastModif}:${minuteLastModif}`;
+const input = document.querySelector('input');
+const button = document.querySelector('button');
+const list = document.querySelector('ul');
+
+
+// Book of Mormon favorite chapters
+button.addEventListener('click', function() {
+    if (input.value != '') {
+        const listItem = document.createElement('li');
+        const removeButton = document.createElement('button');
+
+        const item = input.value;
+        listItem.textContent = item;
+        removeButton.textContent = '❌';
+
+        listItem.appendChild(removeButton);
+        list.appendChild(listItem);
+
+        removeButton.addEventListener('click', function() {
+            list.removeChild(listItem);
+            input.focus();
+        })
+        input.value = '';
+        input.focus();
+    }
+});
+
