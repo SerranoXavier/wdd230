@@ -42,11 +42,11 @@ input, button {
 }
 button {
 	margin: 0.5rem;
-	transition: 0.25s;
+	transition: all 0.1s ease-in-out;
 }
 button:hover {
 	transform: scale(1.1);
-	font-weight: 600;
+	font-weight: 500;
 }
 .delete {
 	width: fit-content;
