@@ -41,11 +41,13 @@ const list = document.querySelector('ul');
 
 // Book of Mormon favorite chapters
 button.addEventListener('click', function() {
-    if (input.value != '') {
+	const pattern = new RegExp("^ *$");
+	const item = input.value;
+
+    if (!(pattern.test(item))) {
         const listItem = document.createElement('li');
         const removeButton = document.createElement('button');
 
-        const item = input.value;
         listItem.textContent = item;
         removeButton.textContent = '❌';
 
@@ -56,8 +58,8 @@ button.addEventListener('click', function() {
             list.removeChild(listItem);
             input.focus();
         })
-        input.value = '';
-        input.focus();
     }
+	input.value = '';
+	input.focus();
 });
 
