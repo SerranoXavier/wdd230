@@ -50,3 +50,9 @@ const yearLastModif = dateLastModif.getFullYear();
 const hourLastModif = dateLastModif.getHours();
 const minuteLastModif = dateLastModif.getMinutes();
 document.querySelector("#lastmodified").textContent = `${dayLastModif} ${monthLastModif} ${yearLastModif} ${hourLastModif}:${minuteLastModif}`;
+
+
+const dayBannerDisplayed = [1, 2];
+if (dayBannerDisplayed.includes(d.getDay())) {
+	document.querySelector("#banner").style.display = "block";
+}

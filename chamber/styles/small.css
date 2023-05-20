@@ -4,6 +4,9 @@ body {
     text-align: center;
     color: #222222;
 }
+button {
+    cursor: pointer;
+}
 h1, h2, h3, h4 {
     font-family: "Bebas Neue", "Arial", sans-serif;
     color:#F35C5B;
@@ -16,9 +19,34 @@ h2 {
 }
 h3 {
     font-size: 1.5em;
+    margin: 0.1em;
 }
 h4 {
     font-size: 1.25em;
+    margin: 0.1em;
+    color: #111111;
+}
+#banner { 
+    background-color: #C5E3F5;
+    margin: 0 auto;
+    border: 2px solid #222222;
+    display: none;
+}
+#banner p {
+    margin: auto;
+    font-size: 0.9em;
+    align-items: center;
+    padding: 0.25em;
+    animation: animate 15s linear infinite;
+    white-space: nowrap;
+}
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 header {
     background-color: #F4F5F6;
@@ -92,19 +120,82 @@ nav ul.open {
 #menuButton span:nth-child(2) {display: none;}
 #menuButton.open span:nth-child(1) {display: none;}
 #menuButton.open span:nth-child(2) {display: block;}
-
+#hero {
+    display: grid;
+}
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#hero-text {
+    text-align: center;
+    color: white;
+    border: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 2em;
+}
+#hero-text h1 {
+    font-size: 1.5em;
+    line-height: 0px;
+}
+#hero-text h2 {
+    font-size: 0.7em;
+    color: #F4F5F6;
+    line-height: 0px;
+}
+#hero-text p {
+    margin: 3em auto 1em auto;
+    color:#F4F5F6;
+}
+#hero-text button {
+    font-size: 0.66em;
+    margin-bottom: 1em;
+    padding: 0.25em;
+}
+#hero-text button:hover {
+    background-color: #C5E3F5;
+}
 main div {
     border: 1px solid #111111;
     min-height: 100px;
     margin: 5px;
 }
+main a {
+    text-decoration: none;
+    color:#F35C5B;
+}
+main a:hover {
+    color:#C5E3F5;
+    font-weight: bold;
+}
 #join {
     display: none;
 }
-#spotlight3 {
+#join button {
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-size: 1.75em;
+    margin: 0.5em;
+    padding: 0.25em 0.75em;
+}
+#join button:hover {
+    background-color: #C5E3F5;
+}
+.spotlights img {
+    width: 25%;
+    margin: 10px;
+}
+.spotlights p {
+    margin: auto;
+    border-top: 1px solid #222222;
+    width: 80%;
+}
+.spotlight3 {
     display:none;
 }
-
 footer {
     background-color: #F4F5F6;
     border-top: 2px solid #F35C5B;
