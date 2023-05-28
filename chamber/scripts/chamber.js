@@ -53,7 +53,7 @@ document.querySelector("#lastmodified").textContent = `${dayLastModif} ${monthLa
 
 
 // banner displayed only on Mondays and Tuesdays
-const dayBannerDisplayed = [1, 2, 6];
+const dayBannerDisplayed = [1, 2];
 if (dayBannerDisplayed.includes(d.getDay())) {
 	document.querySelector("#banner").style.display = "block";
 }
