@@ -181,6 +181,7 @@ main a {
 main a:hover {
     color:#C5E3F5;
     font-weight: bold;
+    text-decoration: underline;
 }
 #join {
     display: none;
