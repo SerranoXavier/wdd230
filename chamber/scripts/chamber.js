@@ -52,7 +52,17 @@ const minuteLastModif = dateLastModif.getMinutes();
 document.querySelector("#lastmodified").textContent = `${dayLastModif} ${monthLastModif} ${yearLastModif} ${hourLastModif}:${minuteLastModif}`;
 
 
-const dayBannerDisplayed = [1, 2];
+// banner displayed only on Mondays and Tuesdays
+const dayBannerDisplayed = [1, 2, 6];
 if (dayBannerDisplayed.includes(d.getDay())) {
 	document.querySelector("#banner").style.display = "block";
+}
+
+
+// wind chill factor
+const temp = document.querySelector("#temp").textContent;
+const windSpeed = document.querySelector("#windSpeed").textContent;
+if (temp <= 10 && windSpeed >= 4.8) {
+	const windChill = 13.2 + (0.6215 * temp) - (11.37 * windSpeed ** 0.16) + (0.4275 * temp * windSpeed ** 0.16);
+	document.querySelector("#windChill").textContent = Math.round(windChill) + " °C";
 }

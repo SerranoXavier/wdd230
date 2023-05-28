@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
         <title>Chamber of Commerce - Lyon (France)</title>
     </head>
 <body>
@@ -23,17 +24,17 @@
     <header>
         <div id="topNav">
             <a id="logo" href="index.html">
-                <img src="images/BeLyon_logo_red_black.png" alt="Be Lyon Logo: Head of a roaring lion">
+                <img src="images/BeLyon_logo.webp" alt="Be Lyon Logo: Head of a roaring lion">
             </a>
             <h1>
                 Chamber of Commerce<br>Lyon
             </h1>
             <div id="socialNetwork">
                 <a href="https://www.linkedin.com"  target="_blank">
-                    <img src="images/linkedin_black.png" alt="LinkedIn logo">
+                    <img src="images/linkedin_black.webp" alt="LinkedIn logo">
                 </a>
                 <a href="https://www.facebook.com"  target="_blank">
-                    <img src="images/facebook_black.png" alt="Facebook logo">
+                    <img src="images/facebook_black.webp" alt="Facebook logo">
                 </a>
             </div>
                 <button id="menuButton"><span>&#9776;</span><span>X</span></button>
@@ -53,7 +54,12 @@
     </header>
     <main>
         <div id="hero">
-            <img src="images/Lyon_1.jpg" alt="Lyon cityscape at night with tall buildings in the foreground">
+            <!-- <img src="images/Lyon_1.jpg" alt="Lyon cityscape at night with tall buildings in the foreground"> -->
+            <picture id="hero-image">
+                <source  srcset="images/wdd230-org_medium.jpg" media="(min-width:500px) and (max-width:749px)">
+                <source  srcset="images/wdd230-org_large.jpg" media="(min-width:750px)">
+                <img src="images/wdd230-org_small.jpg" alt="Three people meeting">
+            </picture>
             <div id="hero-text">
                 <h1>BE LYON</h1>
                 <h2>The place to be</h2>
@@ -70,9 +76,11 @@
         </div>
         <div id="weather">
             <h3>Weather</h3>
-            <h4>Forecast Weather</h4>
+            <h4>Today</h4>
             <p>
-                Weather
+                <span id="temp">5</span> °C<br>
+                Wind Speed: <span id="windSpeed">12</span> km/h<br>
+                Wind chill: <span id="windChill">N/A</span>
             </p>
         </div>
         <div id="news">
@@ -84,7 +92,7 @@
         </div>
         <div class="spotlights">
             <div class="spotlight1">
-                <img src="images/bank.png" alt="a hand holding a dollar coin in it's palm">
+                <img src="images/bank.webp" alt="a hand holding a dollar coin in it's palm">
                 <h3>Bank of Lyon</h3>
                 <h4>We invest in you</h4>
                 <p>
@@ -92,7 +100,7 @@
                 </p>
             </div>
             <div class="spotlight2">
-                <img src="images/airport.png" alt="an airplane flying over the earth">
+                <img src="images/airport.webp" alt="an airplane flying over the earth">
                 <h3>Lyon Airports</h3>
                 <h4>Flying you everywhere and beyond</h4>
                 <p>
@@ -100,7 +108,7 @@
                 </p>
             </div>
             <div class="spotlight3">
-                <img src="images/project_consultant.png" alt="a computer screen displaying charts and data">
+                <img src="images/project_consultant.webp" alt="a computer screen displaying charts and data">
                 <h3>Bestadvice Consulting</h3>
                 <h4>Driving your projects to success</h4>
                 <p>
@@ -116,7 +124,7 @@
         </div>
     </main>
     <footer>
-        <img id="logoFooter" src="images/BeLyon_logo_red_black.png" alt="Be Lyon Logo: Head of a roaring lion">
+        <img id="logoFooter" src="images/BeLyon_logo.webp" alt="Be Lyon Logo: Head of a roaring lion">
         <div id="adress">
             <h2>Chamber of Commerce - Lyon</h2>
             <p>
@@ -126,7 +134,7 @@
         <div id="contact">
             <a href = "mailto:contact@belyon.org">contact@belyon.org</a>
             <p>+33 4 12 34 56 78</p>
-            <a href="https://www.google.com/maps/place/Palais+de+la+Bourse+de+Lyon/@45.7640335,4.8341373,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eaf89f0eafe1:0xe0289dd08db2ef55!8m2!3d45.7640335!4d4.836326!16s%2Fm%2F063zr7n"  target="_blank"><img src="images/place_black.png" alt="map pointer icon">Location map</a>
+            <a href="https://www.google.com/maps/place/Palais+de+la+Bourse+de+Lyon/@45.7640335,4.8341373,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eaf89f0eafe1:0xe0289dd08db2ef55!8m2!3d45.7640335!4d4.836326!16s%2Fm%2F063zr7n"  target="_blank"><img src="images/place_black.webp" alt="map pointer icon">Location map</a>
         </div>
         <div id="credits">
             <p>&copy; <span id="currentyear"></span> Lyon Chamber of Commerce | Xavier Serrano | WDD 230 Project</p>
