@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xavier Serrano">
+    <meta name="description" content="Lesson 7: Lazy Loading - WDD 230 - Brigham Young Idaho University - Xavier Serrano">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@200&display=swap">
+    <title>Lazy Loading - WDD 230 - Xavier Serrano</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 7: Lazy Loading</h1>
+    </header>
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/2023-03-22_Terran-1-GLHF_Kraus.webp" alt="Rocket engines firing">
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/ArcticHenge_Letelier.webp" alt="Aurora borealis over an arch in Iceland">
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/CometZtfYosemite_Mostofi.webp" alt="A comet shining over a waterfall in the mountains">
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/gijsDSC_1917.webp" alt="A comet shining over trees">
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/RockyArchAurora_Pellegrini.webp" alt="Green aurora borealis above an ark">
+    <img src="images/placeholder.webp" loading="lazy" data-src="images/ZodiacalPlanets_Merzlyakov.webp" alt="Planets on zodiacal plane shining over a man on the top of a mountain">
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Xavier Serrano | Québec, Canada</p>
+        <p>Last updated: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
