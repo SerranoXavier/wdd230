@@ -40,14 +40,14 @@ h4 {
     animation: animate 15s linear infinite;
     white-space: nowrap;
 }
-@keyframes animate {
+/* @keyframes animate {
     0% {
         transform: translateX(100%);
     }
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 header {
     background-color: #F4F5F6;
     border-bottom: 2px solid #c82828;

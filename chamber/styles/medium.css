@@ -6,14 +6,14 @@
     #banner p {
         animation: animate 25s linear infinite;
     }
-    @keyframes animate {
+    /* @keyframes animate {
         0% {
             transform: translateX(85%);
         }
         100% {
             transform: translateX(-100%);
         }
-    }
+    } */
     #hero {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
