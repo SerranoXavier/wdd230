@@ -1,7 +1,7 @@
 @media only screen and (min-width: 50rem) {
-    #banner p {
+    /* #banner p {
         animation: animate 35s linear infinite;
-    }
+    } */
     /* @keyframes animate {
         0% {
             transform: translateX(66%);
@@ -20,7 +20,7 @@
     nav ul li a {
         border: none;
     }
-    main{
+    #homepage{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -51,5 +51,17 @@
     #weather {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+    }
+
+    /* discover page */
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #stats h3 {
+        margin-bottom: 3em;
+    }
+    #stats p {
+        margin-bottom: 5em;
     }
 }

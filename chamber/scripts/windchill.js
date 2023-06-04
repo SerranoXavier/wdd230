@@ -1,4 +1,5 @@
 // wind chill factor
+
 const temp = document.querySelector("#temp").textContent;
 const windSpeed = document.querySelector("#windSpeed").textContent;
 if (temp <= 10 && windSpeed >= 4.8) {

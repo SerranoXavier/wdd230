@@ -38,7 +38,7 @@ h4 {
     font-size: 0.9em;
     align-items: center;
     padding: 0.25em;
-    animation: animate 15s linear infinite;
+    /* animation: animate 15s linear infinite; */
     white-space: nowrap;
 }
 /* @keyframes animate {
@@ -59,6 +59,13 @@ header h1 {
 }
 header a {
     text-decoration: none;
+}
+.today, .lastVisit, .datesLink {
+    font-size: 0.80em;
+    margin: 0.5em;
+}
+.datesLink {
+    display: none;
 }
 #topNav {
     display: grid;
@@ -124,95 +131,23 @@ nav ul.open {
 #menuButton span:nth-child(2) {display: none;}
 #menuButton.open span:nth-child(1) {display: none;}
 #menuButton.open span:nth-child(2) {display: block;}
-#hero {
-    display: grid;
-}
-#hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-#hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-#hero-text {
-    text-align: center;
-    color: white;
-    border: none;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    font-size: 2em;
-}
-#hero-text h1 {
-    font-size: 1.5em;
-    line-height: 0px;
-}
-#hero-text h2 {
-    font-size: 0.7em;
-    /* color: #F4F5F6; */
-    color:#111111;
-    line-height: 0px;
-}
-#hero-text p {
-    margin: 3em auto 1em auto;
-    /* color:#F4F5F6; */
-    color: #111111;
-}
-#hero-text button {
-    font-size: 0.66em;
-    margin-bottom: 1em;
-    padding: 0.25em;
-    color: #111111;
-}
-#hero-text button:hover {
-    background-color: #C5E3F5;
-}
-main div {
-    border: 1px solid #111111;
-    min-height: 100px;
-    margin: 5px;
-}
+
 main a {
     text-decoration: none;
     color:#c82828;
+    cursor: pointer;
 }
 main a:hover {
     color:#C5E3F5;
     font-weight: bold;
     text-decoration: underline;
 }
-#join {
-    display: none;
+mark {
+    color: #c82828;
+    background-color: #ffffff;
+    font-weight: 600;
 }
-#join button {
-    font-family: "Bebas Neue", "Arial", sans-serif;
-    font-size: 1.75em;
-    margin: 0.5em;
-    padding: 0.25em 0.75em;
-    color: #111111;
-    background-color: #F4F5F6;
-}
-#join button:hover {
-    background-color: #C5E3F5;
-}
-.spotlights img {
-    width: 25%;
-    margin: 10px;
-}
-.spotlights p {
-    margin: auto;
-    border-top: 1px solid #222222;
-    width: 80%;
-}
-.spotlight3 {
-    display:none;
-}
+
 footer {
     background-color: #F4F5F6;
     border-top: 2px solid #c82828;
@@ -243,4 +178,114 @@ footer img:hover {
     border-top: 1px solid rgba(0,0,0,0.5);
     margin: 10px 0;
     padding-bottom: 1px;
+}
+
+
+/* home page */
+#hero {
+    display: grid;
+}
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: -1;
+}
+/* #hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+} */
+#homepage #hero-text {
+    text-align: center;
+    color: white;
+    border: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 2em;
+}
+#hero-text h1 {
+    font-size: 1.5em;
+    line-height: 0px;
+}
+#hero-text h2 {
+    font-size: 0.7em;
+    color: #F4F5F6;
+    line-height: 0px;
+}
+#hero-text p {
+    margin: 3em auto 1em auto;
+    color:#F4F5F6;
+}
+#hero-text button {
+    font-size: 0.66em;
+    margin-bottom: 1em;
+    padding: 0.25em;
+    color: #111111;
+}
+#hero-text button:hover {
+    background-color: #C5E3F5;
+}
+#homepage div {
+    border: 1px solid #111111;
+    min-height: 100px;
+    margin: 5px;
+}
+#join {
+    display: none;
+}
+#join button {
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-size: 1.75em;
+    margin: 0.5em;
+    padding: 0.25em 0.75em;
+    color: #111111;
+    background-color: #F4F5F6;
+}
+#join button:hover {
+    background-color: #C5E3F5;
+}
+.spotlights img {
+    width: 25%;
+    margin: 10px;
+}
+.spotlights p {
+    margin: auto;
+    border-top: 1px solid #222222;
+    width: 80%;
+}
+.spotlight3 {
+    display:none;
+}
+
+
+/* discover page */
+#discover div {
+    border: 1px solid #111111;
+    min-height: 100px;
+    margin: 5px;
+}
+#stats {
+    padding: 0 1em;
+}
+#stats h3 {
+    margin-bottom: 1em;
+}
+#stats p {
+    margin-bottom: 1.5em;
+}
+img {
+    margin: auto;
+    filter: blur(0px);
+    transition: filter 0.5s;
+}
+img[data-src] {
+    filter: blur(5px);
+}
+#gallery figure a img {
+    max-width: 100%;
 }

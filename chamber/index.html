@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
         <title>Chamber of Commerce - Lyon (France)</title>
     </head>
@@ -41,90 +41,96 @@
         </div>
         <nav>
             <ul id="menuNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <p id="today"></p>
+        <div class="dates">
+            <p class="today"></p>
+            <p class="datesLink"> - </p>
+            <p class="lastVisit"></p>
         </div>
     </header>
     <main>
-        <div id="hero">
-            <!-- <img src="images/Lyon_1.jpg" alt="Lyon cityscape at night with tall buildings in the foreground"> -->
-            <picture id="hero-image">
-                <source  srcset="images/wdd230-org_medium.jpg" media="(min-width:500px) and (max-width:749px)">
-                <source  srcset="images/wdd230-org_large.jpg" media="(min-width:750px)">
-                <img src="images/wdd230-org_small.jpg" alt="Three people meeting">
-            </picture>
-            <div id="hero-text">
-                <h1>BE LYON</h1>
-                <h2>The place to be</h2>
-                <p>Welcome to Lyon</p>
-                <button>Join the Chamber</button>
-              </div>
-        </div>
-        <div id="event">
-            <h3>Grand Opening</h3>
-            <h4>Inauguration of the new public library</h4>
-            <p>
-                Join us for the inauguration of the new central library Saturday at 9:00 a.m. and discover the new cultural offer<br><a href="#">More info...</a>
-            </p>
-        </div>
-        <div id="weather">
-            <h3>Weather</h3>
-            <h4>Today</h4>
-            <p>
-                <span id="temp">5</span> °C<br>
-                Wind Speed: <span id="windSpeed">12</span> km/h<br>
-                Wind chill: <span id="windChill">N/A</span>
-            </p>
-        </div>
-        <div id="news">
-            <h3>News Release</h3>
-            <h4>Lyon is the new European Capital of Culture!</h4>
-            <p>
-                We are proud to annouce that Lyon was elected as the new European Capital of Culture<br><a href="#">More info...</a>
-            </p>
-        </div>
-        <div class="spotlights">
-            <div class="spotlight1">
-                <img src="images/bank.webp" alt="a hand holding a dollar coin in it's palm">
-                <h3>Bank of Lyon</h3>
-                <h4>We invest in you</h4>
+        <div id="homepage">
+            <div id="hero">
+                <img src="images/Lyon_1.jpg" alt="Lyon cityscape at night with tall buildings in the foreground">
+                <!-- <picture id="hero-image">
+                    <source  srcset="images/wdd230-org_medium.jpg" media="(min-width:500px) and (max-width:749px)">
+                    <source  srcset="images/wdd230-org_large.jpg" media="(min-width:750px)">
+                    <img src="images/wdd230-org_small.jpg" alt="Three people meeting">
+                </picture> -->
+                <div id="hero-text">
+                    <h1>BE LYON</h1>
+                    <h2>The place to be</h2>
+                    <p>Welcome to Lyon</p>
+                    <button>Join the Chamber</button>
+                </div>
+            </div>
+            <div id="event">
+                <h3>Grand Opening</h3>
+                <h4>Inauguration of the new public library</h4>
                 <p>
-                    <a href="mailto:contact@bank-lyon.com">contact@bank-lyon.com</a><br>+33 4 56 78 90 12<br><a href="#" target="_blank">www.bank-lyon.com</a>
+                    Join us for the inauguration of the new central library Saturday at 9:00 a.m. and discover the new cultural offer<br><a href="#">More info...</a>
                 </p>
             </div>
-            <div class="spotlight2">
-                <img src="images/airport.webp" alt="an airplane flying over the earth">
-                <h3>Lyon Airports</h3>
-                <h4>Flying you everywhere and beyond</h4>
+            <div id="weather">
+                <h3>Weather</h3>
+                <h4>Today</h4>
                 <p>
-                    <a href="mailto:contact@lyon-airports.fr">contact@lyon-airports.fr</a><br>+33 4 87 65 43 21<br><a href="#" target="_blank">www.lyon-airports.fr</a>
+                    <span id="temp">5</span> °C<br>
+                    Wind Speed: <span id="windSpeed">12</span> km/h<br>
+                    Wind chill: <span id="windChill">N/A</span>
                 </p>
             </div>
-            <div class="spotlight3">
-                <img src="images/project_consultant.webp" alt="a computer screen displaying charts and data">
-                <h3>Bestadvice Consulting</h3>
-                <h4>Driving your projects to success</h4>
+            <div id="news">
+                <h3>News Release</h3>
+                <h4>Lyon is the new European Capital of Culture!</h4>
                 <p>
-                    <a href="mailto:info@bestadvice-consulting.net">info@bestadvice-consulting.net</a><br>+33 4 34 56 78 90<br><a href="#" target="_blank">www.bestadvice-consulting.net</a>
+                    We are proud to annouce that Lyon was elected as the new European Capital of Culture<br><a href="#">More info...</a>
                 </p>
             </div>
-        </div>
-        <div id="join">
-            <button>Join Us!</button>
-            <p>
-                Discover how to join the chamber of commerce and how it will benefit your organization!
-            </p>
+            <div class="spotlights">
+                <div class="spotlight1">
+                    <img src="images/bank.webp" alt="a hand holding a dollar coin in it's palm">
+                    <h3>Bank of Lyon</h3>
+                    <h4>We invest in you</h4>
+                    <p>
+                        <a href="mailto:contact@bank-lyon.com">contact@bank-lyon.com</a><br>+33 4 56 78 90 12<br><a href="#" target="_blank">www.bank-lyon.com</a>
+                    </p>
+                </div>
+                <div class="spotlight2">
+                    <img src="images/airport.webp" alt="an airplane flying over the earth">
+                    <h3>Lyon Airports</h3>
+                    <h4>Flying you everywhere and beyond</h4>
+                    <p>
+                        <a href="mailto:contact@lyon-airports.fr">contact@lyon-airports.fr</a><br>+33 4 87 65 43 21<br><a href="#" target="_blank">www.lyon-airports.fr</a>
+                    </p>
+                </div>
+                <div class="spotlight3">
+                    <img src="images/project_consultant.webp" alt="a computer screen displaying charts and data">
+                    <h3>Bestadvice Consulting</h3>
+                    <h4>Driving your projects to success</h4>
+                    <p>
+                        <a href="mailto:info@bestadvice-consulting.net">info@bestadvice-consulting.net</a><br>+33 4 34 56 78 90<br><a href="#" target="_blank">www.bestadvice-consulting.net</a>
+                    </p>
+                </div>
+            </div>
+            <div id="join">
+                <button>Join Us!</button>
+                <p>
+                    Discover how to join the chamber of commerce and how it will benefit your organization!
+                </p>
+            </div>
         </div>
     </main>
     <footer>
-        <img id="logoFooter" src="images/BeLyon_logo.webp" alt="Be Lyon Logo: Head of a roaring lion">
+        <a href="index.html">
+            <img id="logoFooter" src="images/BeLyon_logo.webp" alt="Be Lyon Logo: Head of a roaring lion">
+        </a>
         <div id="adress">
             <h2>Chamber of Commerce - Lyon</h2>
             <p>

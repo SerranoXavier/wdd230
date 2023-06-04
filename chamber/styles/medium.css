@@ -1,11 +1,11 @@
 @media only screen and (min-width: 35rem) {
-    main{
+    #homepage {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    #banner p {
+    /* #banner p {
         animation: animate 25s linear infinite;
-    }
+    } */
     /* @keyframes animate {
         0% {
             transform: translateX(85%);
@@ -18,6 +18,14 @@
         grid-column: 1 / 4;
         grid-row: 1 / 2;
     }
+    .datesLink {
+        display: inline;
+    }
+    .dates {
+        display: flex;
+        justify-content: center;
+    }
+
     #news {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
@@ -52,5 +60,27 @@
     }
     #credits {
         grid-column: 1 / 4;
+    }
+
+    /* discover page */
+    #discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    #stats h3 {
+        margin-bottom: 1em;
+    }
+    #stats p {
+        margin-bottom: 2em;
+    }
+    #gallery figure a img {
+        transition: 0.5s;
+    }
+    #gallery figure a img:hover {
+        margin: -1%;
+        max-width: 102%;
+        background-color: #C5E3F5;
+        opacity: 0.8;
+        border: 2px solid #C5E3F5;
     }
 }
