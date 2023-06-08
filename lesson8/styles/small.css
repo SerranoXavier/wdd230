@@ -34,8 +34,9 @@ main {
 }
 table {
     max-width: 25em;
-    margin: 0 auto -1.25em auto;
-    border-collapse: collapse;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 caption {
     caption-side: bottom;
