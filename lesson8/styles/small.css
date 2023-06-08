@@ -45,7 +45,8 @@ th, td, caption {
 }
 th {
     background-color: #464646;
-    color:#f4f5f6
+    color:#f4f5f6;
+    border: 1px solid #222222;
 }
 th:nth-of-type(1) {
     background-color: #222222;
