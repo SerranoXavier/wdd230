@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xavier Serrano">
+    <meta name="description" content="Lesson 8: Table Build - WDD 230 - Brigham Young Idaho University - Xavier Serrano">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@200&display=swap">
+    <title>Table Build - WDD 230 - Xavier Serrano</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 8: Table Build</h1>
+    </header>
+    <main>
+        <h1>My First Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">ACME Wildwest Services</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Basic</th>
+                    <th>Premium</th>
+                    <th>Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td class="ok">&#10004;</td>
+                    <td class="ok">&#10004;</td>
+                    <td class="ok">&#10004;</td>
+                </tr>
+                <tr>
+                    <td>Feature 2</td>
+                    <td class="no">&#10006;</td>
+                    <td class="ok">&#10004;</td>
+                    <td class="ok">&#10004;</td>
+                </tr>
+                <tr>
+                    <td>Feature 3</td>
+                    <td class="no">&#10006;</td>
+                    <td class="no">&#10006;</td>
+                    <td class="ok">&#10004;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Table 1: Account Feature Comparison</h4>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Xavier Serrano | Québec, Canada</p>
+        <p>Last updated: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/tablebuild.js"></script>
+</body>
+</html>
