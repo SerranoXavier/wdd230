@@ -37,6 +37,9 @@ table {
     margin: 0 auto -1.25em auto;
     border-collapse: collapse;
 }
+caption {
+    caption-side: bottom;
+}
 th, td, caption {
     padding: 0.5em;
 }
