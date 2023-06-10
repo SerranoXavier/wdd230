@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 55rem) {
     /* #banner p {
         animation: animate 35s linear infinite;
     } */
@@ -63,5 +63,14 @@
     }
     #stats p {
         margin-bottom: 5em;
+    }
+
+    /* join page */
+    form label.labelLeft {
+        padding: .4rem;
+    }
+    main div.join {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
 }

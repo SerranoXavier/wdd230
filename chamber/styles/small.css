@@ -193,13 +193,6 @@ footer img:hover {
     grid-row: 1 / 2;
     z-index: -1;
 }
-/* #hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-} */
 #homepage #hero-text {
     text-align: center;
     color: white;
@@ -288,4 +281,123 @@ img[data-src] {
 }
 #gallery figure a img {
     max-width: 100%;
+}
+
+
+/* join page */
+main div.join div {
+    border: 1px solid #111111;
+    margin: 5px;
+}
+/* form */
+form {
+    text-align: left;
+    display: inline-block;
+}
+form fieldset {
+    border: 1px solid #111111;
+    margin: 5px;
+    width: 20rem;
+}
+form legend {
+    color: #c82828;
+    padding: 0 .5rem;
+}
+form label.labelTop {
+    display: block;
+    padding-top: 1rem;
+    color: #111111;
+}
+form label.labelTop input, form label.labelTop textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #222222;
+    padding: .75rem;
+    color: #222222;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #F4F5F6;
+    box-sizing: border-box;
+}
+form label.labelTop input:required {
+    border-left: 6px solid #800000;
+}
+form label.labelTop input:required:valid {
+    border-left: 6px solid #008000;
+}
+form label.labelLeft {
+    display: block;
+    padding: .75rem;
+    color: #111111;
+}
+form input.submitButton {
+    border: 1px solid #111111;
+    background-color: #c82828;
+    color: #F4F5F6;
+    font-size: 1.25rem;
+    padding: .75rem 1.5rem;
+    margin: 0.25rem 5px 2rem 5px;
+    width: 100%;
+    max-width: 20rem;
+    cursor: pointer;
+}
+form input.submitButton:hover {
+    background-color: #C5E3F5;
+    color: #222222;
+}
+/* table */
+table {
+    max-width: 50em;
+    margin: 5px;
+    border-collapse: collapse;
+    display: inline-block;
+}
+table caption {
+    caption-side: bottom;
+}
+table th, td, caption {
+    padding: 0.5em;
+}
+table th.bronze{
+    background-color: #cd7f32;
+    border: 1px solid #111111;
+}
+table th.silver{
+    background-color: #c0c0c0;
+    border: 1px solid #111111;
+}
+table th.gold{
+    background-color: #ffd700;
+    border: 1px solid #111111;
+}
+table th.nonProfit{
+    background-color: #c82828;
+    color:#f4f5f6;
+    border: 1px solid #111111;
+}
+table th span {
+    font-size: 0.66em;
+}
+table th:nth-of-type(1) {
+    background-color: #ffffff
+}
+table tr:nth-child(odd) {
+    background-color: #f4f5f6;
+}
+table tr:nth-child(even) {
+    background-color: #cacaca;
+}
+table td {
+    border: 1px solid #111111;
+}
+table td.ok {
+    color: #008000;
+    font-size: 1.25em;
+}
+table td.no {
+    color: #800000;
+    font-size: 1.25em;
+}
+main div.join {
+    text-align: center;
 }
