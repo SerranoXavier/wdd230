@@ -311,6 +311,7 @@ form label.labelTop {
 form label.labelTop input, form label.labelTop textarea {
     display: block;
     font-size: 1rem;
+    font-family: "Roboto", "Verdana", sans-serif;
     border: 1px solid #222222;
     padding: .75rem;
     color: #222222;
@@ -318,6 +319,10 @@ form label.labelTop input, form label.labelTop textarea {
     max-width: 20rem;
     background-color: #F4F5F6;
     box-sizing: border-box;
+}
+form label.labelTop input:focus, form label.labelTop textarea:focus {
+    outline: none;
+    border: 3px solid #C5E3F5;
 }
 form label.labelTop input:required {
     border-left: 6px solid #800000;
