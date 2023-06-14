@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', 'Verdana', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+h1 {
+    color: #007aa0;
+}
+h2 {
+    color: #1a8aae;
+}
+header {
+    border-bottom: 2px solid #222222;
+}
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+section {
+    background-color: #f4f5f6;
+    padding: 1em;
+    border: 2px solid #222222;
+    margin: 1em;
+    min-width: 340px;
+}
+section p {
+    margin: 0.5em;
+}
+section img {
+    border: 3px solid #222222;
+}
+footer {
+    border-top: 2px solid #222222;
+    padding: 1em;
+}
