@@ -1,0 +1,153 @@
+{
+    "directory": [
+        {
+            "company": "Bank of Lyon",
+            "adressLine1": "1234 rue de la République",
+            "adressLine2": "69001 Lyon 1",
+            "country": "France",
+            "email": "contact@bank-lyon.com",
+            "phone": "+33 4 56 78 90 12",
+            "website": "www.bank-lyon.com",
+            "imageSrc": "images/Bank-of-Lyon.webp",
+            "imageAlt": "a hand holding a dollar coin in it's palm",
+            "membership": "gold",
+            "dateEntry": "12/04/2001",
+            "slogan": "We Invest in You"
+        },
+
+        {
+            "company": "Lyon Airports",
+            "adressLine1": "BP 123",
+            "adressLine2": "69123 Aéroport Lyon Saint-Exupéry",
+            "country": "France",
+            "email": "contact@lyon-airports.fr",
+            "phone": "+33 4 87 65 43 21",
+            "website": "www.lyon-airports.fr",
+            "imageSrc": "images/Lyon-Airports.webp",
+            "imageAlt": "an airplane flying over the earth",
+            "membership": "gold",
+            "dateEntry": "02/03/2007",
+            "slogan": "Flying You Everywhere and Beyond"
+        },
+
+        {
+            "company": "BestAdvice Consulting",
+            "adressLine1": "129 rue Servient",
+            "adressLine2": "69003 Lyon 3",
+            "country": "France",
+            "email": "info@bestadvice-consulting.net",
+            "phone": "+33 4 34 56 78 90",
+            "website": "www.bestadvice-consulting.net",
+            "imageSrc": "images/BestAdvice-Consulting.webp",
+            "imageAlt": "a computer screen displaying charts and data",
+            "membership": "gold",
+            "dateEntry": "01/09/2012",
+            "slogan": "Driving your Projects to Success"
+        },
+
+        {
+            "company": "BoulAngelrie",
+            "adressLine1": "17 Rue Auguste Comte",
+            "adressLine2": "69002 Lyon 2",
+            "country": "France",
+            "email": "contact@boulangelrie.fr",
+            "phone": "+33 4 12 34 56 78",
+            "website": "www.boulangelrie.fr",
+            "imageSrc": "images/BoulAngelrie.webp",
+            "imageAlt": "a loaf of bread with a baguette",
+            "membership": "silver",
+            "dateEntry": "01/03/2010",
+            "slogan": "Un Ange de Boulangerie"
+        },
+
+        {
+            "company": "Moulin Valette SARL",
+            "adressLine1": "1708 rue de l'Aviation",
+            "adressLine2": "69800 Saint-Priest",
+            "country": "France",
+            "email": "info@moulin-valette.fr",
+            "phone": "+33 4 90 12 34 56",
+            "website": "www.moulin-valette.fr",
+            "imageSrc": "images/Moulin-Valette.webp",
+            "imageAlt": "an old manual grinder",
+            "membership": "bronze",
+            "dateEntry": "09/12/2008",
+            "slogan": "Nous Moulinons pour Vous"
+        },
+
+        {
+            "company": "Leconte Architect",
+            "adressLine1": "33 rue Bossuet",
+            "adressLine2": "69006 Lyon 6",
+            "country": "France",
+            "email": "contact@leconte-architect.com",
+            "phone": "+33 4 78 90 12 34",
+            "website": "www.leconte-architect.com",
+            "imageSrc": "images/Leconte-Architect.webp",
+            "imageAlt": "a ruler with a plan of an house and a pencil on it",
+            "membership": "silver",
+            "dateEntry": "18/02/2022",
+            "slogan": "Building Your Dreams"
+        },
+
+        {
+            "company": "Cours Lemaitre",
+            "adressLine1": "194 Rue Garibaldi",
+            "adressLine2": "690063 Lyon 3",
+            "country": "France",
+            "email": "contact@cours-lemaitre.com",
+            "phone": "+33 4 56 78 90 12",
+            "website": "www.cours-lemaitre.com",
+            "imageSrc": "images/Cours-Lemaitre.webp",
+            "imageAlt": "a man with glasses showing calculus on a white board",
+            "membership": "bronze",
+            "dateEntry": "15/04/2014",
+            "slogan": "Lemaitre, des Cours de Maître"
+        },
+
+        {
+            "company": "International Misoki Tourism",
+            "adressLine1": "3-chōme-7 Kyōbashi",
+            "adressLine2": "Chuo City, Tokyo 104-0031",
+            "country": "Japan",
+            "email": "contact@international-misoki-tourism.jp",
+            "phone": "+81 75 217 1779",
+            "website": "www.international-misoki-tourism.jp",
+            "imageSrc": "images/International-Misoki_Tourism.webp",
+            "imageAlt": "placeholders pointing locations on a globe",
+            "membership": "silver",
+            "dateEntry": "18/11/2016",
+            "slogan": "Make You Travel Beyond Borders"
+        },
+
+        {
+            "company": "Jacques Gros",
+            "adressLine1": "World trade center, 10 - 12 Boulevard Vivier-Merle",
+            "adressLine2": "69003 Lyon 3",
+            "country": "France",
+            "email": "courtier@jacques-gros.net",
+            "phone": "+33 4 09 87 65 43",
+            "website": "www.jacques-gros.net",
+            "imageSrc": "images/Jacques-Gros.webp",
+            "imageAlt": "a man wearing glasses and holding charts and a dollard coin on his hand",
+            "membership": "silver",
+            "dateEntry": "24/06/2018",
+            "slogan": "Courtier en Banques et Assurances"
+        },
+
+        {
+            "company": "SOS Mal-Logement",
+            "adressLine1": "86 Rue de la Villette",
+            "adressLine2": "69003 Lyon 3",
+            "country": "France",
+            "email": "info@sos-mallogement.org",
+            "phone": "+33 4 87 65 43 21",
+            "website": "www.sos-mallogement.org",
+            "imageSrc": "images/SOS-Mal-Logement.webp",
+            "imageAlt": "a pair of hands surrounding a house with a couple inside",
+            "membership": "non-profit",
+            "dateEntry": "02/08/2008",
+            "slogan": "Fight Poor-Housing Together"
+        }
+    ]
+  }

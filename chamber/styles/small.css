@@ -251,7 +251,7 @@ footer img:hover {
     border-top: 1px solid #222222;
     width: 80%;
 }
-.spotlight3 {
+.spotlightCard:nth-of-type(3) {
     display:none;
 }
 
@@ -405,4 +405,92 @@ table td.no {
 }
 main div.join {
     text-align: center;
+}
+
+/* Directory page */
+#directoryOptions button {
+    margin: 0 0.25em 1em 0.25em;
+}
+#directoryOptions button.active {
+    background-color: #c82828;
+    color: #F4F5F6;
+}
+#directoryOptions button:hover {
+    background-color: #C5E3F5;
+}
+#directoryOptions button img {
+    width: 25px;
+    margin: 5px;
+    display: block;
+}
+/* grid option */
+.directoryGrid {
+    display: block;
+}
+.directoryGrid, .directoryGrid div {
+    border: 1px solid #111111;
+    min-height: 100px;
+    margin: 5px;
+}
+.directoryGrid img {
+    width: 25%;
+    margin: 10px;
+}
+.directoryGrid p {
+    margin: auto;
+    padding: 1em;
+    border-top: 1px solid #222222;
+    width: 80%;
+}
+/* both options */
+.bronzeMember {
+    background-color:#cd7f32;
+    font-weight: bold;
+}
+.silverMember {
+    background-color: #c0c0c0;
+    font-weight: bold;
+}
+.goldMember {
+    background-color: #ffd700;
+    font-weight: bold;
+}
+.nonProfitMember {
+    background-color: #c82828;
+    color: #f4f5f6;
+    font-weight: bold;
+}
+/* list option */
+.directoryList {
+    display:flex;
+    flex-direction: column;
+}
+.directoryList, .directoryList div {
+    border: 1px solid #111111;
+    min-height: 50px;
+    margin: 5px;
+}
+.directoryList div.directoryRow {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr) 1fr;
+    align-items: center;
+}
+.directoryList div.directoryRow h3.directoryCompany {
+    font-size: 1.25em;
+}
+.directoryList div.directoryRow p.directoryEmail {
+    display: none;
+}
+.directoryList div.directoryRow p.directoryPhone {
+    display: none;
+}
+.directoryList div.directoryRow p.directoryMembershipSmall {
+    padding: 0.75em;
+    margin: 1em;
+}
+.directoryList div.directoryRow p.directoryMembershipLarge {
+    display: none;
+}
+div.hidden {
+    display: none;
 }

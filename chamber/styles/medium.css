@@ -83,4 +83,19 @@
         opacity: 0.8;
         border: 2px solid #C5E3F5;
     }
+
+    /* directory page */
+    .directoryGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .directoryList div.directoryRow {
+        grid-template-columns: repeat(4, 3fr) 1fr;
+    }
+    .directoryList div.directoryRow p.directoryEmail {
+        display: block;
+    }
+    .directoryList div.directoryRow p.directoryPhone {
+        display: block;
+    }
 }
