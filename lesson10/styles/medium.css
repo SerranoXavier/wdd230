@@ -1,0 +1,29 @@
+@media only screen and (min-width: 35em) {
+    body {
+        margin: 10px;
+    }
+    header {
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.25em;
+    }
+    table th.topRoundedCorners {
+        border-radius: 10px 10px 0 0;
+    }
+    table tr.bottomRoundedCorners td:first-of-type {
+        border-radius: 0 0 0 10px;
+    }
+    table tr.bottomRoundedCorners td:last-of-type {
+        border-radius: 0 0 10px 0;
+    }
+    footer{
+        border-radius: 10px;
+    }
+}
