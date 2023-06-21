@@ -14,14 +14,8 @@
     h3 {
         font-size: 1.25em;
     }
-    table th.topRoundedCorners {
-        border-radius: 10px 10px 0 0;
-    }
-    table tr.bottomRoundedCorners td:first-of-type {
-        border-radius: 0 0 0 10px;
-    }
-    table tr.bottomRoundedCorners td:last-of-type {
-        border-radius: 0 0 10px 0;
+    figure img {
+        border-radius: 10px;
     }
     footer{
         border-radius: 10px;
