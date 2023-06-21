@@ -40,12 +40,36 @@ const list = document.querySelector('ul');
 
 
 // Weather
+function titleCase(string) {
+	// lower case all the characters
+	string = string.toLowerCase();
+	// split the string into arrays of words
+	string = string.split(" ");
+	// map the array replacing the first letter of each word by upper case
+	string = string.map(function(word) {
+		return word.replace(word[0], word[0].toUpperCase());
+	});
+	// join the words of the array
+	return string.join(" ");
+};
+
+function displayResults(weatherData) {
+	currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+	const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+	const desc = weatherData.weather[0].description;
+  
+	weatherIcon.setAttribute('src', iconsrc);
+	weatherIcon.setAttribute('alt', desc);
+	captionDesc.textContent = titleCase(desc);
+};
+
+
 // select HTML elements in the document
 const currentTemp = document.querySelector('#currentTemp');
 const weatherIcon = document.querySelector('#weatherIcon');
 const captionDesc = document.querySelector('figcaption');
 // API URL
-// const url = "https://api.openweathermap.org/data/2.5/weather?lat=64.844034&lon=-147.719281&units=imperial&appid=d03c45f00009470faed1bab6fda16b37"
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=f6588d7122110c890c4e5af65e131e5b"
 
 
@@ -69,14 +93,3 @@ async function apiFetch() {
   
 apiFetch();
 
-
-function displayResults(weatherData) {
-	currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-
-	const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-	const desc = weatherData.weather[0].description;
-  
-	weatherIcon.setAttribute('src', iconsrc);
-	weatherIcon.setAttribute('alt', desc);
-	captionDesc.textContent = desc;
-}
