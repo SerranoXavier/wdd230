@@ -27,7 +27,7 @@ h4 {
     margin: 0.1em;
     color: #111111;
 }
-#banner { 
+#banner {
     background-color: #C5E3F5;
     margin: 0 auto;
     border: 2px solid #222222;
@@ -147,7 +147,6 @@ mark {
     background-color: #ffffff;
     font-weight: 600;
 }
-
 footer {
     background-color: #F4F5F6;
     border-top: 2px solid #c82828;
@@ -242,6 +241,39 @@ footer img:hover {
 #join button:hover {
     background-color: #C5E3F5;
 }
+div#weatherMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+div#weatherMain figcaption {
+    margin: -1em;
+}
+div#weatherMain {
+    border: none;
+    margin: auto auto 1em auto;
+    width: 80%;
+}
+div#weatherMain p {
+    font-size: 1.5em;
+}
+div#weatherMain figure {
+    margin: 1em auto;
+}
+div#weather p:not(:first-child) {
+    border-top: 1px solid #222222;
+    width: 80%;
+    margin: auto;
+}
+div#weather p:last-child {
+    font-size: 0.75em;
+}
+/* div#weather #temp, div#weather #windSpeed, div#weather #windChill, div#weather #humidity, div#weather #pressure {
+    color: #c82828;
+    background-color: #ffffff;
+    font-weight: 600;
+} */
 .spotlights img {
     width: 25%;
     margin: 10px;

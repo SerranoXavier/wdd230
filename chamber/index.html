@@ -79,12 +79,25 @@
             </div>
             <div id="weather">
                 <h3>Weather</h3>
-                <h4>Today</h4>
-                <p>
-                    <span id="temp">5</span> °C<br>
-                    Wind Speed: <span id="windSpeed">12</span> km/h<br>
+                <h4>Now in Lyon</h4>
+                <div id="weatherMain">
+                    <p id="temperature">
+                        <span id="temp">N/A</span>
+                    </p>
+                    <figure>
+                        <img src="" alt="" id="weatherIcon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <p id="wind">
+                    Wind Speed: <span id="windSpeed">N/A</span><br>
                     Wind chill: <span id="windChill">N/A</span>
                 </p>
+                <p id="humidityPressure">
+                    Humidity: <span id="humidity">N/A</span><br>
+                    Pressure: <span id="pressure">N/A</span>
+                </p>
+                <p class="dataProvider">Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></p>
             </div>
             <div id="news">
                 <h3>News Release</h3>
@@ -149,5 +162,6 @@
     </footer>
     <script src="scripts/chamber.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
