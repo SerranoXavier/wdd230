@@ -268,12 +268,8 @@ div#weather p:not(:first-child) {
 }
 div#weather p:last-child {
     font-size: 0.75em;
+    padding-top: 1em;
 }
-/* div#weather #temp, div#weather #windSpeed, div#weather #windChill, div#weather #humidity, div#weather #pressure {
-    color: #c82828;
-    background-color: #ffffff;
-    font-weight: 600;
-} */
 .spotlights img {
     width: 25%;
     margin: 10px;
