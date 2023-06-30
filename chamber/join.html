@@ -45,7 +45,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li class="active"><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="dates">
@@ -63,26 +63,26 @@
                 <form method="get" action="thankyou.html">
                     <fieldset>
                         <legend>Personal Information</legend>
-                        <label class="labelTop">First Name* <input type="text" name="fname" required title="Your first name"></label>
-                        <label class="labelTop">Last Name* <input type="text" name="lname" required title="Your last name"></label>
+                        <label class="labelTop">First Name* <input type="text" name="fname" placeholder="Jean" required title="Your first name"></label>
+                        <label class="labelTop">Last Name* <input type="text" name="lname" placeholder="Martin" required title="Your last name"></label>
                     </fieldset>
                     <fieldset>
                         <legend>Contact</legend>
-                        <label class="labelTop">Email* <input type="email" name="email" placeholder="example@belyon.org" required title="Your email"></label>
-                        <label class="labelTop">Cell Phone* <input type="tel" name="cellphone" required title="Your cell phone"></label>
+                        <label class="labelTop">Email* <input type="email" name="email" placeholder="example@mycompany.com" required title="Your email"></label>
+                        <label class="labelTop">Cell Phone* <input type="tel" name="cellphone" placeholder="+33123456789" required title="Your cell phone"></label>
                     </fieldset>
                     <fieldset>
                         <legend>Company Information</legend>
-                        <label class="labelTop">Position <input type="text" name="position" pattern="[A-Za-z\- ]{7,}" title="Your job title - Accepts letters, hyphen and space - minimum 7 characters"></label>
-                        <label class="labelTop">Company Name* <input type="text" name="company" required title="Company name"></label>
-                        <Label class="labelTop">Description<textarea name="description" title="A brief description of your company"></textarea></Label>
+                        <label class="labelTop">Position <input type="text" name="position" placeholder="Chief Executive Officer" pattern="[A-Za-z\- ]{7,}" title="Your job title - Accepts letters, hyphen and space - minimum 7 characters"></label>
+                        <label class="labelTop">Company Name* <input type="text" name="company" placeholder="My Company" required title="Company name"></label>
+                        <Label class="labelTop">Description<textarea name="description" placeholder="Write a description of your business" title="A brief description of your company"></textarea></Label>
                     </fieldset>
                     <fieldset>
                         <legend>Membership</legend>
-                        <label class="labelLeft"><input type="radio" name="membership" value="Bronze" title="Bronze mebership"> Bronze</label>
-                        <label class="labelLeft"><input type="radio" name="membership" value="Silver" title="Silver membership"> Silver</label>
-                        <label class="labelLeft"><input type="radio" name="membership" value="Gold" title="Gold membership"> Gold</label>
-                        <label class="labelLeft"><input type="radio" name="membership" value="Non-Profit" title="Non profit organisation membership"> Non-Profit</label>                
+                        <label class="labelRight"><input type="radio" name="membership" value="Bronze" title="Bronze membership"> Bronze</label>
+                        <label class="labelRight"><input type="radio" name="membership" value="Silver" title="Silver membership"> Silver</label>
+                        <label class="labelRight"><input type="radio" name="membership" value="Gold" title="Gold membership"> Gold</label>
+                        <label class="labelRight"><input type="radio" name="membership" value="Non-Profit" title="Non profit organisation membership"> Non-Profit</label>                
                     </fieldset>
                     <input type="hidden" id="joinDate" name="date" value="">
                     <input type="submit" value="Join Be Lyon" class="submitButton">

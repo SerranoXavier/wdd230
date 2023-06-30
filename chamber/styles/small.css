@@ -246,14 +246,12 @@ div#weatherMain {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-}
-div#weatherMain figcaption {
-    margin: -1em;
-}
-div#weatherMain {
     border: none;
     margin: auto auto 1em auto;
     width: 80%;
+}
+div#weatherMain figcaption {
+    margin: -1em;
 }
 div#weatherMain p {
     font-size: 1.5em;
@@ -268,7 +266,10 @@ div#weather p:not(:first-child) {
 }
 div#weather p:last-child {
     font-size: 0.75em;
-    padding-top: 1em;
+    padding: 1em 0 0.5em 0;
+}
+.spotlightCard {
+    padding-bottom: 0.5em;
 }
 .spotlights img {
     width: 25%;
@@ -289,6 +290,7 @@ div#weather p:last-child {
     border: 1px solid #111111;
     min-height: 100px;
     margin: 5px;
+    padding-bottom: 0.5em;
 }
 #stats {
     padding: 0 1em;
@@ -309,130 +311,6 @@ img[data-src] {
 }
 #gallery figure a img {
     max-width: 100%;
-}
-
-
-/* join page */
-main div.join div {
-    border: 1px solid #111111;
-    margin: 5px;
-}
-/* form */
-form {
-    text-align: left;
-    display: inline-block;
-}
-form fieldset {
-    border: 1px solid #111111;
-    margin: 5px;
-    width: 20rem;
-}
-form legend {
-    color: #c82828;
-    padding: 0 .5rem;
-}
-form label.labelTop {
-    display: block;
-    padding-top: 1rem;
-    color: #111111;
-}
-form label.labelTop input, form label.labelTop textarea {
-    display: block;
-    font-size: 1rem;
-    font-family: "Roboto", "Verdana", sans-serif;
-    border: 1px solid #222222;
-    padding: .75rem;
-    color: #222222;
-    width: 100%;
-    max-width: 20rem;
-    background-color: #F4F5F6;
-    box-sizing: border-box;
-}
-form label.labelTop input:focus, form label.labelTop textarea:focus {
-    outline: none;
-    border: 3px solid #C5E3F5;
-}
-form label.labelTop input:required {
-    border-left: 6px solid #800000;
-}
-form label.labelTop input:required:valid {
-    border-left: 6px solid #008000;
-}
-form label.labelLeft {
-    display: block;
-    padding: .75rem;
-    color: #111111;
-}
-form input.submitButton {
-    border: 1px solid #111111;
-    background-color: #c82828;
-    color: #F4F5F6;
-    font-size: 1.25rem;
-    padding: .75rem 1.5rem;
-    margin: 0.25rem 5px 2rem 5px;
-    width: 100%;
-    max-width: 20rem;
-    cursor: pointer;
-}
-form input.submitButton:hover {
-    background-color: #C5E3F5;
-    color: #222222;
-}
-/* table */
-table {
-    max-width: 50em;
-    margin: 5px;
-    border-collapse: collapse;
-    display: inline-block;
-}
-table caption {
-    caption-side: bottom;
-}
-table th, td, caption {
-    padding: 0.5em;
-}
-table th.bronze{
-    background-color: #cd7f32;
-    border: 1px solid #111111;
-}
-table th.silver{
-    background-color: #c0c0c0;
-    border: 1px solid #111111;
-}
-table th.gold{
-    background-color: #ffd700;
-    border: 1px solid #111111;
-}
-table th.nonProfit{
-    background-color: #c82828;
-    color:#f4f5f6;
-    border: 1px solid #111111;
-}
-table th span {
-    font-size: 0.66em;
-}
-table th:nth-of-type(1) {
-    background-color: #ffffff
-}
-table tr:nth-child(odd) {
-    background-color: #f4f5f6;
-}
-table tr:nth-child(even) {
-    background-color: #cacaca;
-}
-table td {
-    border: 1px solid #111111;
-}
-table td.ok {
-    color: #008000;
-    font-size: 1.25em;
-}
-table td.no {
-    color: #800000;
-    font-size: 1.25em;
-}
-main div.join {
-    text-align: center;
 }
 
 /* Directory page */
@@ -469,6 +347,9 @@ main div.join {
     padding: 1em;
     border-top: 1px solid #222222;
     width: 80%;
+}
+.directoryGrid p#companyContact, .directoryGrid p#companyAddress {
+    height: 5em;
 }
 /* both options */
 .bronzeMember {
@@ -521,4 +402,137 @@ main div.join {
 }
 div.hidden {
     display: none;
+}
+
+/* join and contact pages */
+main div.join div, main div.contact div {
+    border: 1px solid #111111;
+    min-height: 100px;
+    margin: 5px;
+}
+main div.contact div#callUs {
+    padding-bottom: 0.5em;
+}
+/* form */
+form {
+    text-align: left;
+    display: inline-block;
+}
+form fieldset {
+    border: 1px solid #111111;
+    margin: 5px;
+    width: 20rem;
+}
+form legend {
+    color: #c82828;
+    padding: 0 0.5rem;
+}
+form label.labelTop {
+    display: block;
+    padding-top: 1rem;
+    color: #111111;
+}
+form label.labelTop input, form label.labelTop select, form label.labelTop textarea {
+    display: block;
+    font-size: 1rem;
+    font-family: "Roboto", "Verdana", sans-serif;
+    border: 1px solid #222222;
+    padding: .75rem;
+    color: #222222;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #F4F5F6;
+    box-sizing: border-box;
+}
+form label.labelTop input:focus, form label.labelTop select:focus, form label.labelTop textarea:focus {
+    outline: none;
+    border: 3px solid #C5E3F5;
+}
+form label.labelTop input:required, form label.labelTop select:required, form label.labelTop textarea:required {
+    border-left: 6px solid #800000;
+}
+form label.labelTop input:required:required:valid, form label.labelTop select:required:valid, form label.labelTop textarea:required:valid {
+    border-left: 6px solid #008000;
+}
+form label.labelRight {
+    display: block;
+    padding: .75rem;
+    color: #111111;
+    font-family: "Roboto", "Verdana", sans-serif;
+}
+form input.submitButton {
+    border: 1px solid #111111;
+    background-color: #c82828;
+    color: #F4F5F6;
+    font-size: 1.25rem;
+    padding: .75rem 1.5rem;
+    margin: 5px 5px 10px 5px;
+    width: 100%;
+    max-width: 345.6px;
+    cursor: pointer;
+}
+form input.submitButton:hover {
+    background-color: #C5E3F5;
+    color: #222222;
+}
+/* table */
+table {
+    max-width: 50em;
+    margin: 5px;
+    border-collapse: collapse;
+    display: inline-block;
+}
+table caption {
+    caption-side: bottom;
+}
+table th, td, caption {
+    padding: 0.5em;
+}
+table th.bronze {
+    background-color: #cd7f32;
+    border: 1px solid #111111;
+}
+table th.silver {
+    background-color: #c0c0c0;
+    border: 1px solid #111111;
+}
+table th.gold {
+    background-color: #ffd700;
+    border: 1px solid #111111;
+}
+table thead tr th.nonProfit, table thead tr th.standardHeader {
+    background-color: #c82828;
+    color:#f4f5f6;
+    border: 1px solid #111111;
+}
+table th span {
+    font-size: 0.66em;
+}
+table th:nth-of-type(1) {
+    background-color: #ffffff
+}
+table tr:nth-child(odd) {
+    background-color: #f4f5f6;
+}
+table tr:nth-child(even) {
+    background-color: #cacaca;
+}
+table td {
+    border: 1px solid #111111;
+}
+table td.ok {
+    color: #008000;
+    font-size: 1.25em;
+}
+table td.no {
+    color: #800000;
+    font-size: 1.25em;
+}
+main div.join {
+    text-align: center;
+}
+/* location map */
+iframe#locationMap {
+    width: 80%;
+    height: 30em;
 }

@@ -22,7 +22,9 @@ const displayDirectoryGrid = (directory) => {
         let h3 = document.createElement('h3');
         let h4 = document.createElement('h4');
         let contact = document.createElement('p');
-        let adress = document.createElement('p');
+        contact.setAttribute('id', 'companyContact')
+        let address = document.createElement('p');
+        address.setAttribute('id','companyAddress');
         let membership = document.createElement('p');
 
         // Build the image by setting all the relevant attributes
@@ -38,8 +40,8 @@ const displayDirectoryGrid = (directory) => {
 
         // Build the p content to display the contact info
         contact.innerHTML = `<a href="mailto:${company.email}">${company.email}</a><br>${company.phone}<br><a href="#" target="_blank">${company.website}</a>`;
-        // Build the p content to display the adress
-        adress.innerHTML = `${company.adressLine1}<br>${company.adressLine2}<br>${company.country}`;
+        // Build the p content to display the address
+        address.innerHTML = `${company.addressLine1}<br>${company.addressLine2}<br>${company.country}`;
         // Build the p content to display the membership level
         if (company.membership == "bronze") {
             membership.textContent = `Bronze Member`;
@@ -64,7 +66,7 @@ const displayDirectoryGrid = (directory) => {
         card.appendChild(h3);
         card.appendChild(h4);
         card.appendChild(contact);
-        card.appendChild(adress);
+        card.appendChild(address);
         card.appendChild(membership);
 
         // Append the div.directoryGrid with the div.directoryCard

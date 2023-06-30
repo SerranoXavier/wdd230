@@ -46,8 +46,8 @@ const humidity = document.querySelector('#humidity');
 const pressure = document.querySelector('#pressure');
 
 // API URL
-const latitude = 64.844034;
-const longitude = -147.719281;
+const latitude = 45.7485;
+const longitude = 4.8467;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=d03c45f00009470faed1bab6fda16b37`
 
 

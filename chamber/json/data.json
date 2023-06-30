@@ -2,8 +2,8 @@
     "directory": [
         {
             "company": "Bank of Lyon",
-            "adressLine1": "1234 rue de la République",
-            "adressLine2": "69001 Lyon 1",
+            "addressLine1": "1234 rue de la République",
+            "addressLine2": "69001 Lyon 1",
             "country": "France",
             "email": "contact@bank-lyon.com",
             "phone": "+33 4 56 78 90 12",
@@ -17,8 +17,8 @@
 
         {
             "company": "Lyon Airports",
-            "adressLine1": "BP 123",
-            "adressLine2": "69123 Aéroport Lyon Saint-Exupéry",
+            "addressLine1": "BP 123",
+            "addressLine2": "69123 Aéroport Lyon Saint-Exupéry",
             "country": "France",
             "email": "contact@lyon-airports.fr",
             "phone": "+33 4 87 65 43 21",
@@ -32,8 +32,8 @@
 
         {
             "company": "BestAdvice Consulting",
-            "adressLine1": "129 rue Servient",
-            "adressLine2": "69003 Lyon 3",
+            "addressLine1": "129 rue Servient",
+            "addressLine2": "69003 Lyon 3",
             "country": "France",
             "email": "info@bestadvice-consulting.net",
             "phone": "+33 4 34 56 78 90",
@@ -47,8 +47,8 @@
 
         {
             "company": "BoulAngelrie",
-            "adressLine1": "17 Rue Auguste Comte",
-            "adressLine2": "69002 Lyon 2",
+            "addressLine1": "17 Rue Auguste Comte",
+            "addressLine2": "69002 Lyon 2",
             "country": "France",
             "email": "contact@boulangelrie.fr",
             "phone": "+33 4 12 34 56 78",
@@ -62,8 +62,8 @@
 
         {
             "company": "Moulin Valette SARL",
-            "adressLine1": "1708 rue de l'Aviation",
-            "adressLine2": "69800 Saint-Priest",
+            "addressLine1": "1708 rue de l'Aviation",
+            "addressLine2": "69800 Saint-Priest",
             "country": "France",
             "email": "info@moulin-valette.fr",
             "phone": "+33 4 90 12 34 56",
@@ -77,8 +77,8 @@
 
         {
             "company": "Leconte Architect",
-            "adressLine1": "33 rue Bossuet",
-            "adressLine2": "69006 Lyon 6",
+            "addressLine1": "33 rue Bossuet",
+            "addressLine2": "69006 Lyon 6",
             "country": "France",
             "email": "contact@leconte-architect.com",
             "phone": "+33 4 78 90 12 34",
@@ -92,8 +92,8 @@
 
         {
             "company": "Cours Lemaitre",
-            "adressLine1": "194 Rue Garibaldi",
-            "adressLine2": "690063 Lyon 3",
+            "addressLine1": "194 Rue Garibaldi",
+            "addressLine2": "690063 Lyon 3",
             "country": "France",
             "email": "contact@cours-lemaitre.com",
             "phone": "+33 4 56 78 90 12",
@@ -107,8 +107,8 @@
 
         {
             "company": "International Misoki Tourism",
-            "adressLine1": "3-chōme-7 Kyōbashi",
-            "adressLine2": "Chuo City, Tokyo 104-0031",
+            "addressLine1": "3-chōme-7 Kyōbashi",
+            "addressLine2": "Chuo City, Tokyo 104-0031",
             "country": "Japan",
             "email": "contact@international-misoki-tourism.jp",
             "phone": "+81 75 217 1779",
@@ -122,8 +122,8 @@
 
         {
             "company": "Jacques Gros",
-            "adressLine1": "World trade center, 10 - 12 Boulevard Vivier-Merle",
-            "adressLine2": "69003 Lyon 3",
+            "addressLine1": "World trade center, 10 - 12 Boulevard Vivier-Merle",
+            "addressLine2": "69003 Lyon 3",
             "country": "France",
             "email": "courtier@jacques-gros.net",
             "phone": "+33 4 09 87 65 43",
@@ -137,8 +137,8 @@
 
         {
             "company": "SOS Mal-Logement",
-            "adressLine1": "86 Rue de la Villette",
-            "adressLine2": "69003 Lyon 3",
+            "addressLine1": "86 Rue de la Villette",
+            "addressLine2": "69003 Lyon 3",
             "country": "France",
             "email": "info@sos-mallogement.org",
             "phone": "+33 4 87 65 43 21",
