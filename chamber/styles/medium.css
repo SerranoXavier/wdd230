@@ -1,4 +1,14 @@
 @media only screen and (min-width: 35rem) {
+    header h1#h1MediumLarge {
+        text-align: left;
+        font-size: 1.33em;
+        margin-right: 5px;
+        display: grid;
+    }
+    header h1#h1Small {
+        display: none;
+    }
+    /* home page */
     #homepage {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -77,7 +87,6 @@
         transition: 0.5s;
     }
     #gallery figure a img:hover {
-        margin: -1%;
         max-width: 102%;
         background-color: #C5E3F5;
         opacity: 0.8;

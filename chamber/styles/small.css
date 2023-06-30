@@ -53,9 +53,14 @@ header {
     background-color: #F4F5F6;
     border-bottom: 2px solid #c82828;
 }
-header h1 {
-    text-align: left;
-    font-size: 1em;
+header h1#h1MediumLarge{
+    display: none;
+}
+header h1#h1Small {
+    font-size: 1.33em;
+    margin: auto;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
 }
 header a {
     text-decoration: none;
@@ -69,7 +74,7 @@ header a {
 }
 #topNav {
     display: grid;
-    grid-template-columns: 110px auto 80px 70px;
+    grid-template-columns: 195px auto 80px 70px;
 }
 #logo {
     text-align: center;
@@ -77,10 +82,11 @@ header a {
 }
 #logo img {
     margin: 5px 20px 5px 5px;
-    height: 33px;
+    height: 66px;
 }
 #socialNetwork {
     align-self: center;
+    grid-column: 3 / 4;
 }
 #socialNetwork img {
     padding: 5px;
@@ -194,18 +200,21 @@ footer img:hover {
 }
 #homepage #hero-text {
     text-align: center;
-    color: white;
+    color: #F4F5F6;
     border: none;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 2em;
+    background-color: #11111100;
 }
 #hero-text h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 0px;
+    text-shadow: -2px 0 0  #111111, 0 2px 0  #111111, 2px 0 0  #111111, 0 -2px 0  #111111,
+    -2px -2px 0  #111111, 2px 2px 0  #111111, 2px -2px 0  #111111, -2px 2px 0  #111111;
 }
 #hero-text h2 {
-    font-size: 0.7em;
+    font-size: 0.94em;
     color: #F4F5F6;
     line-height: 0px;
 }
@@ -311,6 +320,7 @@ img[data-src] {
 }
 #gallery figure a img {
     max-width: 100%;
+    color: #C5E3F5FF;
 }
 
 /* Directory page */
@@ -333,7 +343,7 @@ img[data-src] {
 .directoryGrid {
     display: block;
 }
-.directoryGrid, .directoryGrid div {
+.directoryGrid div {
     border: 1px solid #111111;
     min-height: 100px;
     margin: 5px;
@@ -366,7 +376,7 @@ img[data-src] {
 }
 .nonProfitMember {
     background-color: #c82828;
-    color: #f4f5f6;
+    color: #F4F5F6;
     font-weight: bold;
 }
 /* list option */
@@ -374,7 +384,7 @@ img[data-src] {
     display:flex;
     flex-direction: column;
 }
-.directoryList, .directoryList div {
+.directoryList div {
     border: 1px solid #111111;
     min-height: 50px;
     margin: 5px;
@@ -412,6 +422,10 @@ main div.join div, main div.contact div {
 }
 main div.contact div#callUs {
     padding-bottom: 0.5em;
+}
+iframe {
+    border: 1px solid #111111;
+    margin: 5px;
 }
 /* form */
 form {
@@ -502,7 +516,7 @@ table th.gold {
 }
 table thead tr th.nonProfit, table thead tr th.standardHeader {
     background-color: #c82828;
-    color:#f4f5f6;
+    color:#F4F5F6;
     border: 1px solid #111111;
 }
 table th span {
@@ -512,7 +526,7 @@ table th:nth-of-type(1) {
     background-color: #ffffff
 }
 table tr:nth-child(odd) {
-    background-color: #f4f5f6;
+    background-color: #F4F5F6;
 }
 table tr:nth-child(even) {
     background-color: #cacaca;
