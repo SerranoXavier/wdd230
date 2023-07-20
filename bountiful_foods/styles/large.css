@@ -1,0 +1,51 @@
+@media only screen and (min-width: 90rem) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer a#logoFooterA {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    footer div#address {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    footer div#contactLocation {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    footer #credits {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    /* home page */
+    main div#homepage {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    main div#hero {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    main div#atBountifulFoods {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    main div#refresh {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    main div#carlsbad {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    main div#weather {
+        grid-column: 4/5;
+        grid-row: 3/5;
+    }
+    main div#socialNetworks {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}

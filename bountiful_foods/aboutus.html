@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Xavier Serrano">
+        <meta name="description" content="Bountiful Foods - All about us">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Prosto+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <title>About Us - Bountiful Foods</title>
+    </head>
+    <body>
+        <header>
+            <div id="topNav">
+                <a id="logo" href="index.html">
+                    <img src="images/Bountiful_Foods_logo_small_inverted.webp" alt="Bountiful Foods logo: egg, apple and carrot">
+                </a>
+                <div id="title">
+                    <h1>Bountiful Foods</h1>
+                    <h2>Fresh, Healthy</h2>
+                </div>
+                <button id="menuButton"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <nav>
+                <ul id="menuNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li class="active"><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="aboutus">
+                <div id="introAboutus">
+                <h1>About Us</h1>
+                    <p>
+                        Do you wonder how and why Bountiful Foods was created?<br>
+                        Woud you like to contact Bountiful Foods?<br>
+                        You are at the right place!
+                    </p>
+                </div>
+                <div id="ourHistory">
+                <h2>Our History</h2>
+                    <p>
+                        More than 25 years ago, in 1996, John Doe, the co-founder of Bountiful Foods, realized that a happy and balanced life starts with good nutrition.<br>
+                        Despite extensive research, he had to resolve not to be able to find a supplier who would allow him to buy fresh, local, tastefully and nutritionally excellent food for his gourmet restaurant.<br>
+                        Based on this observation, with his childhood friend Jane Doe, who would later become his wife, they founded Bountiful Foods on April 1, 1998.<br>
+                        Since then, Boutiful Foods has continued to grow and diversify. This, always with the initial aim of providing the most generous food and respecting our environment.
+                    </p>
+                </div>
+                <div id="contactUs">
+                    <h2>Contact Us</h2>
+                    <div id="locateUs">
+                        <h3>Locate Us</h3>
+                        <iframe id="locationMap" loading="lazy" src="https://maps.google.com/maps?q=33.1365485%2C-117.3243437&z=15&output=embed" title="Bountiful Foods - 1234 Fruits Driveway, Carlsbad, CA 92008"></iframe>
+                    </div>
+                    <div id="visitUs">
+                        <h3>Visit Us</h3>
+                        <p>Bountiful Foods</p>
+                        <p>1234 Fruits Driveway<br>Carlsbad, CA 92008</p>
+                        <h4>Bountiful Foods Opening Hours</h4>
+                        <p>
+                            Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                            Sunday: central shop closed
+                        </p>
+                    </div>
+                    <div id="callUs">
+                        <h3>Call Us</h3>
+                        <p>
+                            During opening hours, you can call the central store.<br>
+                            Our team will be pleased to answer your questions and help you.
+                        </p>
+                        <a href="tel:7605551234">760-555-1234</a>
+                    </div>
+                    <div id="contactForm">
+                        <h3>Write Us</h3>
+                        <form method="get" action="confirmation.html">
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <label class="labelTop">First Name* <input type="text" name="fname" placeholder="John" required title="Your first name"></label>
+                                <label class="labelTop">Last Name* <input type="text" name="lname" placeholder="Doe" required title="Your last name"></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Contact</legend>
+                                <label class="labelTop">Email* <input type="email" name="email" placeholder="example@email.com" required title="Your email"></label>
+                                <label class="labelTop">Cell Phone* <input type="tel" name="cellphone" placeholder="7605554321" required title="Your cell phone"></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Request</legend>
+                                <label class="labelTop" title="Choose a topic">Topic* 
+                                    <select name="topic" required>
+                                        <option value="" selected disabled hidden>Choose a topic</option>
+                                        <option value="info">Information</option>
+                                        <option value="order">Order</option>
+                                        <option value="business">Business with Bountiful Foods</option>
+                                        <option value="generalComments">General Comments</option>
+                                    </select>
+                                </label>
+                                <Label class="labelTop">Message* <textarea name="message" placeholder="Write your message" required title="Your message"></textarea></Label>
+                            </fieldset>
+                            <input type="hidden" id="contactDate" name="date" value="">
+                            <input type="submit" value="Contact Bountiful Foods" class="submitButton">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="index.html" id="logoFooterA">
+                <img id="logoFooter" src="images/Bountiful_Foods_logo.webp" alt="Bountiful Foods logo: egg, apple and carrot">
+            </a>
+            <div id="address">
+                <h2>Bountiful Foods</h2>
+                <p>1234 Fruits Driveway, Carlsbad, CA 92008</p>
+            </div>
+            <div id="contactLocation">
+                <div id="contact">
+                    <p>760-555-1234</p>
+                    <p><a href = "mailto:contact@bountiful-foods.com">contact@bountiful-foods.com</a></p>
+                </div>
+                <div id="locationMapFooter">
+                <a href="https://www.google.com/maps/place/33%C2%B008'11.6%22N+117%C2%B019'18.4%22W/@33.1365485,-117.3243437,15z"  target="_blank"><img src="images/place_black.webp" alt="map pointer icon">Location map</a>
+                </div>
+            </div>
+            <div id="credits">
+                <p>&copy; <span id="currentyear"></span> Bountiful Foods | Xavier Serrano | WDD 230 Final Project</p>
+                <p>Last updated: <span id="lastmodified"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/bountiful-foods.js"></script>
+        <script src="scripts/contact.js"></script>
+    </body>
+</html>

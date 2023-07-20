@@ -1,0 +1,352 @@
+body {
+	margin: 0 auto;
+    font-family: "Barlow", "Verdana", sans-serif;
+    text-align: center;
+    color: #071013;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background-color: #FCFAFA;
+}
+button {
+    font-size: 1em;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border: 1px solid #E8F2FA;
+    background-color: #2E6D92;
+    color: #E8F2FA;
+}
+button:hover {
+    background-color: #C8F64A;
+    color: #2E6D92;
+}
+h1, h2, h3, h4 {
+    font-family: "Prosto One", "Arial", sans-serif;
+    color:#2E6D92;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.25em;
+}
+h3 {
+    font-size: 1em;
+}
+h4 {
+    font-size: 0.75em;
+}
+header {
+    background-color: #E8F2FA;
+    border-bottom: 2px solid #2E6D92;
+}
+header div#title {
+    padding: 20px 0;
+}
+header h1 {
+    color: #C8F64A;
+    text-align: left;
+    margin: auto;
+}
+header h2 {
+    color: #E8F2FA;
+    text-align: left;
+    font-family: "Barlow", "Verdana", sans-serif;
+    margin: auto;
+    font-size: 1em;
+    font-weight: 100;
+}
+header a {
+    text-decoration: none;
+}
+#topNav {
+    display: grid;
+    grid-template-columns: 195px auto 70px;
+    background-color: #2E6D92;
+}
+#logo {
+    text-align: center;
+    align-self: center;
+}
+#logo img {
+    margin: 5px 20px 5px 5px;
+    height: 125px;
+}
+header div#topNav button#menuButton {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #E8F2FA;
+    padding: 0;
+}
+header div#topNav button#menuButton:hover {
+    background-color: #C8F64A;
+    color: #2E6D92;
+}
+#menuNav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: #E8F2FA;
+    color: #2E6D92;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #2E6D92;
+    font-weight: 400;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li.active a {
+    background-color: #2E6D92;
+    color: #E8F2FA;
+}
+nav ul li:hover a {
+    background-color: #C8F64A;
+    color: #2E6D92;
+}
+nav ul {
+    display: none;
+    border-top: 2px solid rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+nav ul.open {
+    display:block;
+}
+#menuButton span:nth-child(1) {display: block;}
+#menuButton span:nth-child(2) {display: none;}
+#menuButton.open span:nth-child(1) {display: none;}
+#menuButton.open span:nth-child(2) {display: block;}
+
+main a {
+    text-decoration: none;
+    color:#2E6D92;
+    cursor: pointer;
+    font-weight: 400;
+}
+main a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #E8F2FA;
+    border-top: 2px solid #2E6D92;
+    font-size: 1rem;
+}
+footer a#logoFooterA {
+    margin: auto;
+}
+footer a#logoFooterA img#logoFooter {
+    margin: auto;
+    height: 150px;
+}
+footer h2 {
+    margin: 0.5em;
+}
+footer img {
+    padding: 5px;
+    height: 25px;
+    transition: .5s;
+}
+footer img:hover {
+    height: 29px;
+}
+footer #contact {
+    display: block;
+    align-self: center;
+}
+footer #credits {
+    border-top: 1px solid rgba(0,0,0,0.5);
+    margin: 10px 0;
+    padding-bottom: 1px;
+}
+footer a {
+    text-decoration: none;
+    color: #2E6D92;
+    font-weight: 400;
+}
+footer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* home page */
+main div#homepage {
+    padding: 0;
+}
+#hero {
+    display: grid;
+    padding: 0;
+    border: none;
+}
+#hero img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#hero-text {
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: none;
+}
+#hero-text h2 {
+        color: #E8F2FA;
+        font-family: "Barlow", "Verdana", sans-serif;
+        margin: auto;
+        font-size: 1em;
+        margin-top: 5em; 
+}
+#hero-text button {
+    margin-top: 3em;
+}
+
+main div {
+    border: 1px solid #2E6D92;
+    padding: 0.5em;
+}
+main div#sharedDrinks {
+    border: 2px solid #071013;
+    width: 80%;
+    max-width: 25em;
+    margin: 1em auto;
+    padding: 0 1em;
+}
+
+div#weatherMain {
+    border: none;
+}
+div#weatherMain figure {
+    margin: -1em auto;
+}
+div#weatherMain figure img {
+    margin: 1em auto;
+    background-color: #2E6D92;
+}
+div#weatherMain figure figcaption {
+    margin: -1em auto 2em auto;
+}
+div#weather h2 {
+    font-size: 1em;
+}
+div#weather p.dataProvider {
+    font-size: 0.75em;
+}
+div#weather div#forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3em auto 2em auto;
+    font-size: 0.75em;
+    border: none;
+    overflow: auto;
+}
+div#weather div#forecast div.forecastCard {
+    border: 1px solid #2E6D92;
+    min-width: 100px;
+}
+div#weather div#forecast div.forecastCard img.weatherIcon {
+    background-color: #2E6D92;
+    width: 75px;
+    margin: -0.5em auto 1em auto;
+}
+
+main div#socialNetworks img {
+    display: inline;
+    width: 3em;
+    margin: 0.5em;
+    background-color: #E8F2FA;
+}
+main div#socialNetworks a:hover {
+    text-decoration: none;
+    font-weight: 400;
+}
+main div#socialNetworks img:hover {
+    background-color: #C8F64A;
+}
+
+
+/* fresh and about us pages */
+main div#aboutus {
+    padding: 0;
+}
+/* location map */
+iframe {
+    border: 1px solid #2E6D92;
+    margin: 5px;
+}
+iframe#locationMap {
+    width: 80%;
+    height: 30em;
+}
+/* form */
+form {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+form fieldset {
+    border: 1px solid #2E6D92;
+    margin: 5px;
+    width: 20rem;
+}
+form legend {
+    color: #2E6D92;
+    padding: 0 0.5rem;
+}
+form label.labelTop {
+    display: block;
+    padding-top: 1rem;
+    color: #071013;
+}
+form label.labelTop input, form label.labelTop select, form label.labelTop textarea {
+    display: block;
+    font-size: 1rem;
+    font-family: "Barlow", "Verdana", sans-serif;
+    border: 1px solid #2E6D92;
+    padding: .75rem;
+    color: #071013;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #FCFAFA;
+    box-sizing: border-box;
+}
+form label.labelTop input:focus, form label.labelTop select:focus, form label.labelTop textarea:focus {
+    outline: none;
+    border: 3px solid #2E6D92;
+}
+form label.labelTop input:required, form label.labelTop select:required, form label.labelTop textarea:required {
+    border-left: 6px solid #800000;
+}
+form label.labelTop input:required:required:valid, form label.labelTop select:required:valid, form label.labelTop textarea:required:valid {
+    border-left: 6px solid #008000;
+}
+form label.labelRight {
+    display: block;
+    padding: .75rem;
+    color: #071013;
+    font-family: "Barlow", "Verdana", sans-serif;
+}
+form input.submitButton {
+    border: 1px solid #E8F2FA;
+    background-color: #2E6D92;
+    color: #E8F2FA;
+    font-size: 1.25rem;
+    padding: .75rem 1.5rem;
+    margin: 5px 5px 10px 5px;
+    width: 100%;
+    max-width: 345.6px;
+    cursor: pointer;
+}
+form input.submitButton:hover {
+    background-color: #C8F64A;
+    color: #2E6D92;
+}
+#response {
+    display: none;
+}
